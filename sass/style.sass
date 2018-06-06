@@ -1,0 +1,160 @@
+@mixin hover
+    color: #fff !important
+    background-color: #23a7f1
+$blue : #22a7f0 !important
+$black: #323232 !important
+nav
+    button
+        margin-top: 30px !important
+    img
+        margin-top: 14px
+    span
+        text-align: right
+        font-style: italic
+        font-size: 15px
+        font-weight: bold
+        color: red
+        height: 80px
+        line-height: 80px
+        display: block
+    ul
+        font-size: 0              
+        a
+            height: 80px
+            padding: 0 19px
+            line-height: 80px
+            color: #646464
+            font-size: 16px
+            display: block
+            &:hover
+                @include hover
+.banner1
+    overflow: hidden
+    max-width: 1440px
+    margin: 0 auto
+    img
+        position: relative;
+        left: 50%;
+        -webkit-transform: translateX(-50%);           
+#index #in,#case #ca,#about #ab,#contact #co,#guide #gu,#product #pr
+    @include hover
+
+
+footer
+    background-color: #0083cb
+    margin-top: 50px
+    padding-top: 50px
+    .container
+        *
+            color: #fefefe !important
+    .xm3
+        padding-left: 40px !important
+        background: url("../img/line.jpg") no-repeat 88% 
+        .ph
+            padding-top: 30px
+            margin-bottom: 0 
+    ul
+        li:first-child
+            font-size: 16px
+            font-weight: bold
+            padding-bottom: 3px
+        li:not(:first-child)
+            line-height: 32px
+    .foot-bot
+        text-align: center
+        padding-top: 25px
+        p
+            margin-bottom: 0
+            line-height: 53px
+            border-top: 1px solid #007bbc
+            color: #fefefe
+
+@media (min-width: 1200px)
+    #logo_p 
+        width: 135px
+        float: left
+        padding: 0
+        margin: 0
+        line-height: 20px
+        font-size: 14px
+        position: relative
+        left: 25px
+        top: 28px
+
+@media (max-width: 1199px)
+    nav
+        ul
+            a            
+                padding: 0 17px 
+        span
+            font-size: 12px
+        #logo_p 
+            display: none
+
+
+@media (min-width: 1000px)
+    #fix_footer
+        display: none !important
+
+@media (max-width: 999px)
+    nav
+        ul
+            a            
+                padding: 0 10px 
+    footer
+        .container,.foot-bot
+            display: none
+#fix_footer
+    height: 50px
+    border-top: 1px solid #EEE
+    display: block
+    position: fixed
+    bottom: 0
+    background-color: #fff
+    width: 100%
+    display: -webkit-box
+    display: -moz-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: justify
+    -moz-box-pack: justify
+    -ms-flex-pack: justify
+    -webkit-box-align: center
+    -moz-box-align: justify
+    -ms-flex-align: center
+    justify-content: space-between
+    align-content: center
+    a
+        color: #5D656B
+        -webkit-box-flex: 1
+        -moz-box-flex: 1
+        -webkit-flex: 1
+        -ms-flex: 1
+        flex: 1
+        text-align: center
+        box-sizing: border-box
+        display: block
+        font-size: 10px   
+        span
+            font-size: 20px
+            display: block
+            font-style: normal
+            width: 100%
+            top: 0
+            left: 0
+            padding-left:0 !important
+        
+        p
+            font-size: 16px
+            margin: 0
+            padding: 0
+    
+
+@media (max-width: 759px)
+    header
+        margin-bottom: 15px !important
+        nav
+            ul
+                a            
+                    height: 30px
+                    line-height: 30px
